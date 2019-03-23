@@ -1,0 +1,7 @@
+{
+  "defaultSeverity": "error",
+  "extends": "@amazingburgers/eslint-config-vcx/tslint",
+  "rules": {
+    "no-any": true
+  }
+}

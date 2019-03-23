@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for index.ts</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="prettify.css" />
+    <link rel="stylesheet" href="base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="index.html">All files</a> index.ts
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>0/35</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/16</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>0/4</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>0/35</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">#!/usr/bin/env node
+&nbsp;
+<span class="cstat-no" title="statement not covered" >import  word from '../sales_data.json';</span>
+//console.log(data)
+//var word = require('./sales_data.json');
+//let word = (&lt;any&gt;data)
+//1. To find total sale in chadstone
+function <span class="fstat-no" title="function not covered" >findTotalSales(</span>arr:any[],centreName : string ){
+    
+    let flag : boolean = <span class="cstat-no" title="statement not covered" >false </span>;
+    let result : any;     
+    let i:number;  
+<span class="cstat-no" title="statement not covered" >    for(i = 0;i&lt;arr.length;i++) </span>
+<span class="cstat-no" title="statement not covered" >        if(arr[i].centre == centreName){</span>
+<span class="cstat-no" title="statement not covered" >            flag =true  ;</span>
+<span class="cstat-no" title="statement not covered" >            result = arr[i];</span>
+<span class="cstat-no" title="statement not covered" >            break ;</span>
+        }
+        //check Centre Name found or not 
+<span class="cstat-no" title="statement not covered" >        if (flag) </span>
+<span class="cstat-no" title="statement not covered" >            console.log(`Total Sales In  ${centreName} is ${result.totalSales}`)</span>
+        else
+<span class="cstat-no" title="statement not covered" >            console.log(`${centreName} Not Found`)</span>
+}
+&nbsp;
+// 2. The centre where we took the most sales 
+function <span class="fstat-no" title="function not covered" >centreWithMostSales(</span>arr : any,prop :string ) :any{
+&nbsp;
+    let max:any;
+<span class="cstat-no" title="statement not covered" >    for (let i:number=0 ; i&lt;arr.length ; i++) {</span>
+<span class="cstat-no" title="statement not covered" >        if (!max || (arr[i][prop]) &gt; (max[prop]))</span>
+<span class="cstat-no" title="statement not covered" >            max = arr[i];</span>
+    }
+<span class="cstat-no" title="statement not covered" >    return max;</span>
+&nbsp;
+}
+&nbsp;
+//3. The total sales reported by stores in particular state
+function <span class="fstat-no" title="function not covered" >totalSalesOfState(</span>arr:any[],stateName : string){
+    let sum :number =<span class="cstat-no" title="statement not covered" >0;</span>
+    let flag : boolean = <span class="cstat-no" title="statement not covered" >false </span>;
+<span class="cstat-no" title="statement not covered" >    for(let i:number =0;i&lt;arr.length;i++) {</span>
+<span class="cstat-no" title="statement not covered" >        if (arr[i].state == stateName){</span>
+<span class="cstat-no" title="statement not covered" >            flag = true ;</span>
+<span class="cstat-no" title="statement not covered" >            sum += word[i].totalSales;</span>
+        }
+    };
+&nbsp;
+    //check Centre Name found or not 
+<span class="cstat-no" title="statement not covered" >    if (flag) </span>
+<span class="cstat-no" title="statement not covered" >        console.log(`Total Sales in ${stateName} is ${sum}`)</span>
+    else
+<span class="cstat-no" title="statement not covered" >        console.log(`${stateName} Not Found`)</span>
+   
+}
+&nbsp;
+// 4. The store with the highest sales PSM *
+function <span class="fstat-no" title="function not covered" >centreWithHighestPSM(</span>arr : any[] ) :any{
+&nbsp;
+    let max :any ;
+    let PSM : any;
+    let result:any;
+<span class="cstat-no" title="statement not covered" >    for (let i:number=0 ; i&lt;arr.length ; i++) {    </span>
+<span class="cstat-no" title="statement not covered" >        PSM = arr[i].totalSales/arr[i].area</span>
+<span class="cstat-no" title="statement not covered" >        if (!max || PSM &gt; max){</span>
+<span class="cstat-no" title="statement not covered" >            max = PSM;</span>
+<span class="cstat-no" title="statement not covered" >            result = arr[i];</span>
+        }
+    }
+<span class="cstat-no" title="statement not covered" >    return result;</span>
+}
+&nbsp;
+//to find total sale of particular centre
+<span class="cstat-no" title="statement not covered" >findTotalSales(word,"Chadstone")</span>
+&nbsp;
+//to call second function 
+let centreWithTopSales = <span class="cstat-no" title="statement not covered" >centreWithMostSales(word, "totalSales");</span>
+<span class="cstat-no" title="statement not covered" >console.log(`Top Sales centre is :  ${centreWithTopSales.centre} `);</span>
+&nbsp;
+//to find total sale in state
+<span class="cstat-no" title="statement not covered" >totalSalesOfState(word,"VIC")</span>
+&nbsp;
+//to find store with  highest PSM
+let centreWithTopPSM = <span class="cstat-no" title="statement not covered" >centreWithHighestPSM(word)</span>
+<span class="cstat-no" title="statement not covered" >console.log(`Centre WIth Highest PSM is ${centreWithTopPSM.centre}`)</span>
+&nbsp;
+// "test": "jest --coverage"
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Tue Mar 19 2019 14:45:38 GMT+0530 (India Standard Time)
+</div>
+</div>
+<script src="prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="sorter.js"></script>
+</body>
+</html>
